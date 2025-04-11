@@ -1,55 +1,60 @@
-<h1 align="center"><img src="./images/icon-384.png" width="22px"> ZaloDataExtractor</h1>
+<h1 align="center"><img src="./images/icon-384.png" width="22px"> ZaloDataExtractor-Hook</h1>
 <img align='right' src="./images/icon-384.png" width="75" height="75">
 
-> [!NOTE]
- The purpose of this repository is to be used in conjunction with the [zca-js](https://github.com/RFS-ADRENO/zca-js/), significantly increasing its effectiveness.<br>Reading documents [zca-js](https://github.com/RFS-ADRENO/zca-js/) in [here](https://zca.tdung.co/).<br>Feel free to adjust any sections if needed!
+## Giới thiệu
+**ZaloDataExtractor-Hook** là một tiện ích mở rộng (extension) giúp người dùng đăng ký dùng thử ZaHook một cách nhanh chóng và thuận tiện. Extension này sẽ tự động thu thập các thông tin cần thiết từ Zalo Web và gửi yêu cầu dùng thử.
 
-## Overview
-**ZaloDataExtractor** is a tool designed to extract essential information from the Zalo APP, including IMEI, Cookies, and User-Agent. This tool is perfect for developers, analysts, and anyone needing quick access to these data points for analysis, development, or app compatibility testing.
+## Tính năng
 
-## Features
+- **Tự động thu thập thông tin:** IMEI, Cookies, và User-Agent từ Zalo Web
+- **Giao diện đơn giản:** Chỉ cần điền số điện thoại và nhấn nút đăng ký
+- **Tích hợp với ZaHook:** Tự động gửi yêu cầu dùng thử đến hệ thống
 
-- **Extract IMEI:** Retrieve the IMEI number associated with the Zalo APP.
-- **Fetch Cookies:** Capture session cookies for further use in development or analysis.
-- **Get User-Agent:** Extract the User-Agent string for compatibility testing and user environment analysis.
-
-## Installation
+## Hướng dẫn cài đặt
 
 ```bash
-git clone https://github.com/JustKemForFun/ZaloDataExtractor/
+git clone https://github.com/JustKemForFun/ZaloDataExtractor-Hook/
 ```
-- Clone or download this repository to your local machine.
-- Open your browser and manually type `chrome://extensions/` in the *Chrome browser* or `edge://extensions/` in the *Edge browser* into the address bar.
-- Enable "**Developer mode**" in the top right corner.
-- Click on "**Load unpacked**" and select the folder where you cloned or downloaded the extension.
-<!-- - After cloning the repository, navigate to the `C:\Users\Admin\Documents` folder and move the cloned repository folder there. Then, extract the files.
-- Once there, enable *Developer Mode* and click *Load unpacked*. Navigate to the folder containing the unpacked files is located and select it. -->
 
-## Usage
+1. Tải extension về máy:
+   - Clone hoặc tải repository này về máy
+   - Giải nén nếu tải file zip
 
-- Open Zalo Web in your *Chrome browser* or *Egde browser*.
-- Click on **Extension** and press *Refresh Page* to start getting information.
-- If you use incognito browser please enable incognito browsing in `chrome://extension` or `edge://extensions/` into the address bar.
+2. Cài đặt extension:
+   - Mở Chrome/Edge và truy cập `chrome://extensions/` (Chrome) hoặc `edge://extensions/` (Edge)
+   - Bật "**Developer mode**" ở góc phải trên
+   - Nhấn "**Load unpacked**" và chọn thư mục chứa extension vừa tải về
 
-## Icons
+## Cách sử dụng
 
-- The extension comes with various icons to match different sizes (16px, 32px, 64px, 128px, 192px, 384px).
+1. **Bước 1: Đăng nhập Zalo Web**
+   - Truy cập và đăng nhập vào Zalo Web (https://chat.zalo.me)
+   - Đảm bảo đã đăng nhập thành công
 
-## Troubleshooting
+2. **Bước 2: Kích hoạt extension**
+   - Nhấn vào biểu tượng ZaloDataExtractor-Hook trên thanh extension
+   - Chờ Pop-up hiển thị đầy đủ thông tin (IMEI, Cookies, User-Agent)
 
-If you encounter any issues or have suggestions for improvements, please [create an issue](https://github.com/JustKemForFun/ZaloDataExtractor/issues).
+3. **Bước 3: Đăng ký dùng thử**
+   - Điền số điện thoại vào ô "Phone"
+   - Nhấn nút "Request Trial" để gửi yêu cầu dùng thử
 
-<!-- ## Contributing
+## Xử lý sự cố
 
-We welcome contributions from the community. -->
+Nếu bạn gặp vấn đề khi sử dụng extension:
+- Đảm bảo đã đăng nhập Zalo Web thành công
+- Thử làm mới trang bằng nút "Refresh Page"
+- Kiểm tra kết nối internet
+- Nếu vẫn gặp lỗi, vui lòng [tạo issue](https://github.com/JustKemForFun/ZaloDataExtractor-Hook/issues)
+
 ## Contributors
 
-We welcome contributions from the community.
+Chúng tôi luôn chào đón sự đóng góp từ cộng đồng.
 
-| Name               | GitHub Profile                              | Avatar                                 |
+| Tên               | GitHub Profile                              | Avatar                                 |
 |--------------------|---------------------------------------------|----------------------------------------|
 |     Hoàng Hào      | [Kem](https://www.github.com/JustKemForFun) | <img src="https://avatars.githubusercontent.com/u/136668112" alt="Hoàng Hào" width="50" height="50" /> |
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Dự án này được cấp phép theo giấy phép MIT - xem file [LICENSE](LICENSE) để biết thêm chi tiết.

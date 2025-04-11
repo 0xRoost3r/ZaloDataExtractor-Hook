@@ -107,7 +107,7 @@ document.getElementById("request-trial").addEventListener("click", async () => {
     }
 
     const data = await response.json()
-    alert('Request successful!')
+    alert('Đăng ký tài khoản thành công, liên hệ admin để được kích hoạt tài khoản')
   } catch (error) {
     console.error('Error:', error)
     alert('Failed to send request. Please check if the server is running.')
