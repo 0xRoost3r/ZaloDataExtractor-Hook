@@ -30,13 +30,23 @@
       <label for="user-agent" class="block font-medium mb-2">User-Agent:</label>
       <input type="text" id="user-agent" class="border border-gray-300 px-4 py-2 rounded-md w-full" readonly>
     </div>
-    
-      <div class="button-container">
-        <button id="btn-copy-imei" class="export-imei"><i class="el-icon-document-copy"></i> Copy IMEI</button>
-        <button id="btn-copy-cookies" class="export-cookies"><i class="el-icon-document-copy"></i> Copy Cookies</button>
-        <button id="btn-copy-ua" class="export-ua"><i class="el-icon-document-copy"></i> Copy User-Agent</button>
-        <button type="button" id="refresh-button" class="rf-page">Refresh Page</button>
+
+    <div class="mb-4">
+      <label for="phone" class="block font-medium mb-2">Phone:</label>
+      <input type="text" id="phone" class="border border-gray-300 px-4 py-2 rounded-md w-full" placeholder="Enter phone number">
     </div>
+
+    <div class="mb-4">
+      <button id="request-trial" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+        Request ZaHook Trial
+      </button>
+    </div>
+
+    <div class="button-container">
+      <button id="btn-copy-imei" class="export-imei"><i class="el-icon-document-copy"></i> Copy IMEI</button>
+      <button id="btn-copy-cookies" class="export-cookies"><i class="el-icon-document-copy"></i> Copy Cookies</button>
+      <button id="btn-copy-ua" class="export-ua"><i class="el-icon-document-copy"></i> Copy User-Agent</button>
+      <button type="button" id="refresh-button" class="rf-page">Refresh Page</button>
     </div>
   </div>
 

@@ -75,3 +75,41 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
 });
+
+// Add the request handler
+document.getElementById("request-trial").addEventListener("click", async () => {
+  const imei = document.getElementById("imei").value
+  const cookies = document.getElementById("cookies").value
+  const userAgent = document.getElementById("user-agent").value
+  const phone = document.getElementById("phone").value
+
+  if (!imei || !cookies || !userAgent || !phone) {
+    alert("Please ensure all fields are filled")
+    return
+  }
+
+  try {
+    const response = await fetch('http://zahook.site/api/new-account', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        imei,
+        cookies,
+        agent: userAgent,
+        phone
+      })
+    })
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    const data = await response.json()
+    alert('Request successful!')
+  } catch (error) {
+    console.error('Error:', error)
+    alert('Failed to send request. Please check if the server is running.')
+  }
+})
